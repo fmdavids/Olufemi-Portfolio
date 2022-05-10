@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #666;
+}
+.mainContainer{
+  position: relative;
+}
+.sideNavBar {
+  width: 20%;
+  height: 100vh;
+  padding-top: 2%;
+  position: fixed;
+  top: 0px;
+  background-color: black;
+  z-index: 2;
+}
+.imgProfile {
+  margin: 0 auto;
+}
+.imgProfile,
+.imgProfile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.imgProfile img{
+  border: 8px solid white;
+}
+.sideNavBar .navBar .navText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.sideNavBar .navBar .navText h3,
+.sideNavBar .navBar .navText p {
+  padding: 5px 0;
+}
+.sideNavBar .navBar .navText nav ul {
+  padding: 10px 0;
+}
+.sideNavBar .navBar .navText nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.navText nav ul li a {
+  text-decoration: none;
+  /* color: #333; */
+  color: white;
+  /* padding: 5px; */
+}
+
+.navText nav ul li a:hover {
+  background-color: #e3a641;
+  border-radius: 10px;
+  color: white;
+}
+.active {
+  background-color: #000;
+  border-radius: 5px ;
+  border: 1px solid #e3a641;
+  color: white;
+}
+
+.sideNavFooter {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+}
+
+.sideNavFooter .sociaLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.sociaLinks a {
+  color: white;
+}
+.sociaLinks a:hover {
+  color: #e3a641;
+}
+
+.sideNavFooter p {
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
+}
+
+
+
+/* =============== END OF SIDEBAR =========== */
+
+.mainContainer {
+  position: relative;
+  width: 80%;
+  left: 20%;
+  background-color: rgb(248, 245, 245);
+}
+
+#home,
+#about,
+#services,
+#skills,
+#works,
+#letsTalk {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgb(240, 243, 243);
+}
+
+.container {
+  padding: 30px 50px;
+}
+.plus{
+  display: hidden;
+} 
+#home .mainImg {
+  display: flex;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.mainImg .SkilsIcons {
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  border: 1px solid #e3a641;
+  position: relative;
+  animation: rotate 30s linear infinite;
+}
+#home .mainImg .SkilsIcons span {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  color: #e3a641;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0.5rem #e3a641;
+}
+#home .mainImg .SkilsIcons span:nth-child(1) {
+  left: calc(50% - 2rem);
+  top: -2rem;
+}
+#home .mainImg .SkilsIcons span:nth-child(2) {
+  right: -2rem;
+  top: calc(50% - 2rem);
+  transform: rotate(90deg);
+}
+#home .mainImg .SkilsIcons span:nth-child(3) {
+  left: -2rem;
+  top: calc(50% - 2rem);
+  transform: rotate(-90deg);
+}
+#home .mainImg .SkilsIcons span:nth-child(4) {
+  left: calc(50% - 2rem);
+  bottom: -2rem;
+}
+
+#home .mainImg .img {
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mainText {
+  margin-top: 80px;
+}
+.mainText p {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.mainText em {
+  padding-top: 20px;
+}
+.btnBtn {
+  position: absolute;
+  top: 70vh;
+}
+.btnBtn a {
+  background-color: #e3a641;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btnBtn .myResume {
+  border: 1px solid #e3a641;
+  color: #e3a641;
+  background-color: rgb(242, 245, 245);
+}
+.btnBtn .myResume:hover {
+  color: white;
+  background-color: #e3a641;
+}
+.btnBtn .hireMe:hover {
+  color: #e3a641;
+  background-color: white;
+  border: 1px solid #e3a641;
+}
+
+/* ==================== HOME SECTION ENDS ============== */
+
+section #about {
+  background-color: white;
+}
+section h3 {
+  padding: 30px 0;
+
+  text-align: left;
+}
+.mainText .aboutMe p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ==================== SKILLS SECTION START ============== */
+.gridContainer{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  gap: 50px;
+}
+.skill{
+  text-align: center;
+  border: 2px solid #e3a641;
+  border-radius: 5px;
+}
+.skill h3{
+  text-align: center;
+}
+/* ==================== SKILLS SECTION START ============== */
+
+/* ==================== WORK SECTION START ============== */
+.card img{
+  width: 100%;
+  height: 250px;
+}
+
+
+/* ==================== WORK SECTION END ============== */
+
+
+
+/* ==================== CONTACT SECTION START ============== */
+
+#submitContact{
+  background-color: rgb(103, 103, 236);
+}
+#submitContact:hover{
+  background-color: #fff;
+  border: 2px solid rgb(103, 103, 236);
+}
+
+
+/* ==================== CONTACT SECTION END ============== */
+
+
+
+
+/* =================Media Query ============= */
+@media (max-width: 425px) {
+  .gridContainer { grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  }
+  .skill{
+    width: 160px;
+  }
+
+}
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 10px 10px;
+  }
+  .mainContainer {
+    width: 100%;
+    left: 0;
+    overflow-x: hidden;
+  }
+
+  .sideNavBar {
+    width: 0;
+    height: 600px;
+    position: fixed;
+    left: -250px;
+  }
+  .sideNavBar2 {
+    width: 250px;
+    height: 600px;
+    position: fixed;
+    left: 0px;
+    animation: slide 30s linear;
+  }
+  .imgProfile {
+    margin: 0 auto;
+  }
+  .imgProfile,
+  .imgProfile img {
+ display: none;
+  }
+  #home,
+#about,
+#services,
+#skills,
+#works,
+#letsTalk {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+.plusCirleContainer{
+  position: relative;
+}
+.plusCircle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 200;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  position: fixed;
+}
+.plus{
+  color: #e3a641;
+}
+.mainText em {
+  padding-top: 0px;
+}
+.mainImg .SkilsIcons {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  #home .mainImg .img {
+    width: 18rem;
+    height: 18rem;
+  }
+  .mainText{
+    height: 100px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .mainText p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .btnBtn{
+    position: absolute;
+    top: 640px;
+  }
+}
