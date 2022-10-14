@@ -54,6 +54,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+  outline: none;
 }
 
 .navText nav ul li a {
@@ -65,13 +66,13 @@ body {
 
 .navText nav ul li a:hover {
   background-color: #e3a641;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
 }
 .active {
   background-color: #000;
   border-radius: 5px ;
-  border: 1px solid #e3a641;
+  background-color: #e3a641;
   color: white;
 }
 
@@ -118,9 +119,14 @@ body {
 #works,
 #letsTalk {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   background-color: rgb(240, 243, 243);
+}
+
+section{
+  /* border-bottom: 1px solid #80c8e9; */
+  padding: 0 30px;
 }
 
 .container {
@@ -249,6 +255,25 @@ section h3 {
   line-height: 1.6;
 }
 
+
+.cardTextHeigth{
+  height: 530px;
+  /* background-color: #80c8e9; */
+}
+.cardTextHeigth .par{
+  text-align: center;
+  line-height: 2.2;
+}
+.skillImg{
+  width: 300px;
+  padding-top: 20px;
+}
+.aboutContainer{
+  width: 70%;
+  margin: auto;
+}
+
+
 /* ==================== SKILLS SECTION START ============== */
 .gridContainer{
   width: 80%;
@@ -266,6 +291,12 @@ section h3 {
 .skill h3{
   text-align: center;
 }
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* ==================== SKILLS SECTION START ============== */
 
 /* ==================== WORK SECTION START ============== */
@@ -282,11 +313,11 @@ section h3 {
 /* ==================== CONTACT SECTION START ============== */
 
 #submitContact{
-  background-color: rgb(103, 103, 236);
+  background-color: #80c8e9;
 }
 #submitContact:hover{
   background-color: #fff;
-  border: 2px solid rgb(103, 103, 236);
+  border: 1px solid #80c8e9;
 }
 
 
@@ -296,15 +327,7 @@ section h3 {
 
 
 /* =================Media Query ============= */
-@media (max-width: 425px) {
-  .gridContainer { grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  }
-  .skill{
-    width: 160px;
-  }
 
-}
 @media screen and (max-width: 425px) {
   .container {
     padding: 10px 10px;
@@ -392,4 +415,8 @@ section h3 {
     position: absolute;
     top: 640px;
   }
+  .cardTextHeigth{
+    height: 470px;
+  }
+  
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="typeWriter()">
+<body onload="typeWriter(), setTimeout()">
     <div class="">
         <div id="mSideNave" class="sideNavBar">
             <div class="navBar">
@@ -20,22 +20,22 @@
                 </div>
                 <div class="navText text-white">
                     <h3>Olufemi Ademiju</h3>
-                    <p><em>Jr. Frontend Developer</em></p>
+                    <p><em>MERN STACK Developer</em></p>
                 
                     <nav class="">
                         <ul id="menuNav" class="navMenu">
                             <li >
                                 <a class="nav-link active" href="#home">Home</a>
                             </li>
-                            <li>
-                                <a class="nav-link" href="#about">About</a>
-                            </li>                            
-                            <li >
-                                <a class="nav-link" href="#skills">Skills</a>
-                            </li>
                             <li >
                                 <a class="nav-link" href="#works">Works</a>
                             </li>
+                            <li>
+                                <a class="nav-link" href="#about">About</a>
+                            </li>                            
+                            <!-- <li >
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>                             -->
                             <li>
                                 <a class="nav-link" href="#letsTalk">Contact </a>
                             </li>
@@ -43,11 +43,12 @@
                     </nav>
                     <div class="sideNavFooter">
                         <div class="text-white ">
-                            <a class="me-3" href=""><i class="fab fa-facebook fa-2x"></i></a>
-                            <a class="me-3" href="https://www.linkedin.com/in/fmdavids" target="blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                            <a class="me-3"  href="https://github.com/fmdavids?tab=repositories" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+                            <a class="me-3" href="https://www.facebook.com/fmdavids" target="blank"><i class="fab fa-facebook fa-2x text-white"></i></a>
+                            <a class="me-3" href="https://www.linkedin.com/in/fmdavids" target="blank"><i class="fab fa-linkedin fa-2x text-white"></i></a>
+                            <a class="me-3"  href="https://github.com/fmdavids?tab=repositories" target="_blank"><i class="fab fa-github-square fa-2x text-white"></i></a>
                         </div>
-                        <p class="text-center">&copy <span id="year"></span> fm's-Web</p>
+                        <!-- <p class="text-center">&copy <span id="year"></span> oademiju's-web</p> -->
+                        <p class="text-center"> &copy<span id="year"></span> fm's-web </p>
                     </div>                        
                 </div>
             </div>
@@ -65,7 +66,7 @@
                     <div class="col-lg-4 col-sm-12 order-lg-last order-second mb-5 textCol">
                         <div class="mainText">
                             <p class="hello mb-3 ">  Hello!<br><em><span class="text-info" > I am Olufemi.</span></em> <br></p>
-                            <p> I'm an <span id="typo"> </span></p> 
+                            <p> I developer web app with <span id="typo"> </span></p> 
                             
                         </div>
                         <div class=" btnBtn">
@@ -78,8 +79,8 @@
                         <div class="mainImg">
                             <div class="SkilsIcons">
                                 <span class="right" href=""><i class="fab fa-js fa-2x"></i></span>                        
-                                <span class="bottom" href=""><i class="fab fa-php fa-2x"></i></span>
-                                <span class="right" href=""><i class="fab fa-wordpress-simple fa-2x"></i></span>
+                                <span class="bottom" href=""><i class="fa-brands fa-react fa-2x"></i></span>
+                                <span class="right" href=""><i class="fa-brands fa-node-js fa-2x"></i></span>
                                 <span class="left" href=""><i class="fas fa-code fa-2x"></i></span>
                             </div>
                             <div class="img">
@@ -92,114 +93,27 @@
             </div>
             </section>
 
-            <!-- ======= About Section ======= -->
-            <section id="about" class=" about">
+            <!-- ======= Work Section =======  -->
+
+
+            <section id="works" class=" ">
                 <div class="container">
-        
-                <div class="">
-                    <h2 class="pb-5 ">About</h2>
-                    <p class="pb-3 pt-3">I'm a <b> Web Developer</b> with a passion for building Web Application that makes life easy with new technology. </p>
+                    <h2>My Projects</h2>
                 </div>
-        
-                <div class="row">
-                    <div class="row col-lg-8 pt-4 pt-lg-0 ">
-                    <div class=" ">
-
-                        <p class="pb-3 pt-3 font-italic">
-                            I am a Junior Level Developer who delivers fast with good results. Also, I wish to gain more experience that is required
-                            in development process.
-                        </p>
-                        <p class="pb-3 pt-3">
-                            My work experience is exihibited in the following project with review of challenges and goal reached.
-                        </p>
-                    </div>
-                    
-                    
-                    </div>
-                    <div class="row col-lg-4  pt-lg-0 ">
-                        <div class="row">
-                          
-                            <div class="col-lg-12  pt-4">
-                            <ul>
-                                <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bsc.Ed Physics Education</li>
-                                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> email@example.com</li>
-                                <li><i class="icofont-rounded-right"></i> <strong>Freelancer:</strong> Available</li>
-                            </ul>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <p>I'm reliable with good time management, decision making and error debugging techniques. Assured  willingness to take on task to
-                    support the team and help the business succeed.</p>
-        
-                </div>
-            </section>
-      <!-- End About Section -->
-
-
-            <section id="skills" class=" pt-5 pb-5">
                 <div class="container">
-                    <div>
-                        <h3>My Skills</h3>
-                    </div>
-                <div class="gridContainer">
-                    
-                    <div class=" skill">
-                        <i class="fa-brands fa-html5 fa-5x"></i>
-                        <h3>HTML 5</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fa-brands fa-css3 fa-5x"></i>
-                        <h3>CSS 3</h3>
-                    </div>
-                    <div class=" skill">
-                        <i class="fa-brands fa-bootstrap fa-5x"></i>
-                        <h3>Bootstrap 5</h3>
-                    </div>
-                    <div class=" skill">
-                        <i class="fa-brands fa-js-square fa-5x"></i>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class=" skill">
-                        <i class="fa-brands fa-wordpress-simple fa-5x"></i>
-                        <h3>WordPress</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fas fa-mail-bulk fa-5x"></i>
-                        <h3>HTML E-mail Development </h3>
-                    </div>
-                    <div class=" skill">
-                        <i class="fa-brands fa-react fa-5x"></i>
-                        <h3>React JS</h3>
-                    </div>
-                    <div class=" skill">
-                        <i class="fa-brands fa-node-js fa-5x"></i>
-                        <h3>Node JS</h3>
-                    </div>
-
-                </div>
-                </div>
-            </section>
-
-            <section id="works" class=" pt-5 pb-5">
-                <div class="container">
-                    <div>
-                        <h3>My Projects</h3>
-                    </div>
                     <div class="row">
-                        <div class="col-lg-4 col-sm-12"  >
-                            <div class="card">
+                        <div class="col-lg-6 col-sm-12 pb-3"  >
+                            <div class="card bg-white">
                                 <div class="card-body">
                                     <h5 class="card-title">News-Aggregator</h5>
                                     <img src="./img/News-aggregator.png" class="card-img-top" alt="Health Website Screen Shot" width="150px" heigth="100px">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="card-link">News-Aggregator</a>
+                                    <a href="#" class="card- link">News-Aggregator</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="card">
+                        <div class="col-lg-6 col-sm-12 pb-3">
+                            <div class="card bg-white">
                                 <div class="card-body">
                                     <h5 class="card-title">Todo App</h5>
                                     <img src="./img/tododesktop.png" class="card-img-top" alt="Health Website Screen Shot" width="150px" heigth="100px">
@@ -208,8 +122,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="card">
+                        <div class="col-lg-6 col-sm-12 pb-3">
+                            <div class="card bg-white pb-2">
                                 <div class="card-body">
                                   <h5 class="card-title">Tindog website</h5>
                                   <img src="./img/Tindog.png" class="card-img-top" alt="Health Website Screen Shot" width="150px" heigth="100px">
@@ -221,13 +135,50 @@
                     </div>
                 </div>
             </section>
+
+            <!-- ======= About Section =======  -->
+
+            <section id="about" class="">
+                <div class="container">
+                    <h2 class=" ">About</h2>
+                </div>
+                <div class="aboutContainer">
+                <div class="row aboutRow">
+                    <div class="col-sm-12 col-lg-6 cardTextHeigth">
+                        <div class="card mt-5">
+                            <div class="card-body">
+                            <p class="py-5 pt-2 mt-5 par">I'm a <b>MERN Stack Web Developer</b> with a passion for building Web Application that secure, meet requirements and solve the exact problem. 
+                                My work experience is exihibited in the following project with review of challenges and goal reached.
+                                I'm reliable with good time management, decision making and error debugging techniques.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 skills">
+                        <div class="text-center pb-3 skillImg">
+                            <div class="">
+                                <h5 class="">Frontend Tools</h5>
+                                <img src="./img/frontend.jpg" class="card-img-top" alt="Frontend technologies">
+                            </div>
+                        </div>
+                        <div class="text-center pb-3 skillImg">
+                            <div class="">
+                                <h5 class="card-title">Backend Tools</h5>
+                                <img src="./img/backend.jpg" class="card-img-top" alt="Backend technologies">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
             <section id="letsTalk" class=" pt-5 pb-5">
                 <div class="container">
                     <div class="contact">
                         <h3>Lets Talk</h3>
-                        <form action="">
-                            <input class="form-control" type="text" placeholder="Please, Enter Your Full Name">
-                            <input class="form-control" type="email" placeholder="Please, Enter Your Email">
+                        <form action="https://formspree.io/f/mjvzolwn" method="POST">
+                            <input class="form-control" type="text" name="name" placeholder="Please, Enter Your Full Name">
+                            <input class="form-control" type="email" name="email" placeholder="Please, Enter Your Email">
                             <input class="form-control" type="tel" placeholder="Please, Enter Your Phone Number">
                             <textarea class="form-control" name="message" id="" cols="10" rows="5" placeholder="Please, Enter Your Message"></textarea>
                             <input id="submitContact" class="form-control w-50 justify-items-center" type="submit">
@@ -235,10 +186,14 @@
                     </div>
                 </div>
             </section>
-
+            <footer>
+                <div class="pb-2 pt-4">
+                    <p class="text-center text-primary">&copy <span id="year"></span> fm's-Web</p>
+                </div> 
+            </footer>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
-</html>
+</html> 
